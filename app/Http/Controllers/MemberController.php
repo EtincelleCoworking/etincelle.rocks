@@ -6,7 +6,7 @@ class MemberController extends Controller
 {
     public function profile($slug)
     {
-        $uri = env('API_URL') . '/' . $slug;
+        $uri = env('API_URL') . '/user/' . $slug;
         $result = json_decode(file_get_contents($uri), true);
         $result['data'];
 
