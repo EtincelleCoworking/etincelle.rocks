@@ -13,6 +13,7 @@ class MemberController extends Controller
         return view('member.profile', [
             'user' => $result['data'],
             'cities' => $this->getCities(),
+            'jobs' => $this->getJobs(),
         ]);
     }
 }
