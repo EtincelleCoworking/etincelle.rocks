@@ -17,8 +17,10 @@
         <ul class="dropdown-menu" aria-labelledby="job-dropdown">
             @foreach($jobs as $job)
                 <li>
-                    <a href="{{route('job', ['job_slug' => $job['slug']])}}">{{$job['name']}}</a>
-                    <span class="badge">{{$job['count']}}</span>
+                    <a href="{{route('job', ['job_slug' => $job['slug']])}}">
+                        {{$job['name']}}
+                        <span class="badge">{{$job['count']}}</span>
+                    </a>
                 </li>
             @endforeach
         </ul>
