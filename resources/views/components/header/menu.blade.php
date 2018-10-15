@@ -15,9 +15,12 @@
         <a href="#" class="nav-link dropdown-toggle" id="job-dropdown" data-toggle="dropdown" aria-haspopup="true"
            aria-expanded="false">Métier</a>
         <ul class="dropdown-menu" aria-labelledby="job-dropdown">
-            <li>
-                <a href="#">Prochainement...</a>
-            </li>
+            @foreach($jobs as $job)
+                <li>
+                    <a href="{{route('job', ['job_slug' => $job['slug']])}}">{{$job['name']}}</a>
+                    <span class="badge">{{$job['count']}}</span>
+                </li>
+            @endforeach
         </ul>
     </li>
 </ul>
