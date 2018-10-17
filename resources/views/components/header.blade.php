@@ -21,8 +21,7 @@
 
                         <!-- logo -->
                         <div id="logo" class="logo">
-                            Etincelle
-                            <small>.rocks</small>
+                            Etincelle<small>.rocks</small>
                         </div>
 
                         <!-- name-and-slogan -->
@@ -90,7 +89,7 @@
                                 </button>
 
                                 <div class="collapse navbar-collapse" id="navbar-collapse-1">
-                                    @include('components.header.menu', ['cities' => $cities])
+                                    @include('components.header.menu')
                                 </div>
                             </nav>
                         </div>

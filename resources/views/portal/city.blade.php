@@ -1,7 +1,7 @@
 @extends('portal.layout')
 
-@section('title', 'Page Title')
-@section('description', 'Page description')
+@section('title', 'Etincelle.rocks - Trouvez les talents dont vous avez besoin à '.$city)
+@section('description', 'Trouvez les talents dont vous avez besoin à Toulouse et Albi')
 
 @section('content')
     @include('components.breadcrumb', ['links' => [['target' => '', 'caption' => $city, 'icon' =>'location-arrow']]])

@@ -12,6 +12,23 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
@@ -20,29 +37,29 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
-    <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="{{asset('fonts/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
 
     <!-- Plugins -->
-    <link href="plugins/magnific-popup/magnific-popup.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
-    <link href="plugins/slick/slick.css" rel="stylesheet">
+    <link href="{{asset('plugins/magnific-popup/magnific-popup.css')}}" rel="stylesheet">
+    <link href="{{asset('css/animations.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/slick/slick.css')}}" rel="stylesheet">
 
     <!-- The Project's core CSS file -->
     <!-- Use css/rtl_style.css for RTL version -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
     <!-- The Project's Typography CSS file, includes used fonts -->
     <!-- Used font for body: Roboto -->
     <!-- Used font for headings: Raleway -->
     <!-- Use css/rtl_typography-default.css for RTL version -->
-    <link href="css/typography-default.css" rel="stylesheet">
+    <link href="{{asset('css/typography-default.css')}}" rel="stylesheet">
     <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer) -->
-    <link href="css/skins/light_blue.css" rel="stylesheet">
+    <link href="{{asset('css/skins/light_blue.css')}}" rel="stylesheet">
 
     <!-- Custom css -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="{{asset('css/custom.css')}}" rel="stylesheet">
 
 </head>
 
@@ -61,7 +78,7 @@
 <!-- page wrapper start -->
 <!-- ================ -->
 <div class="page-wrapper">
-@include('components.header', ['cities' => $cities])
+@include('components.header')
 
     @yield('content')
 
@@ -75,21 +92,21 @@
 <!-- JavaScript files placed at the end of the document so the pages load faster -->
 <!-- ================================================== -->
 <!-- Jquery and Bootstap core js files -->
-<script src="plugins/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{asset('plugins/jquery.min.js')}}"></script>
+<script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- Magnific Popup javascript -->
-<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="{{asset('plugins/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 <!-- Appear javascript -->
-<script src="plugins/waypoints/jquery.waypoints.min.js"></script>
-<script src="plugins/waypoints/sticky.min.js"></script>
+<script src="{{asset('plugins/waypoints/jquery.waypoints.min.js')}}"></script>
+<script src="{{asset('plugins/waypoints/sticky.min.js')}}"></script>
 <!-- Count To javascript -->
-<script src="plugins/countTo/jquery.countTo.js"></script>
+<script src="{{asset('plugins/countTo/jquery.countTo.js')}}"></script>
 <!-- Slick carousel javascript -->
-<script src="plugins/slick/slick.min.js"></script>
+<script src="{{asset('plugins/slick/slick.min.js')}}"></script>
 <!-- Initialization of Plugins -->
-<script src="js/template.js"></script>
+<script src="{{asset('js/template.js')}}"></script>
 <!-- Custom Scripts -->
-<script src="js/custom.js"></script>
+<script src="{{asset('js/custom.js')}}"></script>
 
 </body>
 </html>

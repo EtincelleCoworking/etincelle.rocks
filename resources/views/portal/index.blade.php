@@ -1,7 +1,7 @@
 @extends('portal.layout')
 
-@section('title', 'Page Title')
-@section('description', 'Page description')
+@section('title', 'Etincelle.rocks - Trouvez les talents dont vous avez besoin à Toulouse et Albi')
+@section('description', 'Trouvez les talents dont vous avez besoin à Toulouse et Albi')
 
 @section('content')
     <!-- main-container start -->
