@@ -13,7 +13,7 @@
     </li>
     <li class="nav-item dropdown ">
         <a href="#" class="nav-link dropdown-toggle" id="job-dropdown" data-toggle="dropdown" aria-haspopup="true"
-           aria-expanded="false">Métier</a>
+           aria-expanded="false">Compétence</a>
         <ul class="dropdown-menu" aria-labelledby="job-dropdown">
             @foreach(\App\Http\Layout::getJobs() as $job)
                 <li>

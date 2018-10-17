@@ -29,11 +29,16 @@
                     <!-- ================ -->
                     <h1 class="page-title">
                         {{$user['firstname']}} {{$user['lastname']}}
+                        {{--
                         <a class="btn btn-gray btn-animated pull-right" href="#">
                             E-mail
                             <i class="fa fa-envelope-o"></i>
                         </a>
-
+                        --}}
+                        <a class="btn btn-gray btn-animated pull-right" href="{{$user['website']}}">
+                            Visitez mon site
+                            <i class="fa fa-globe"></i>
+                        </a>
                     </h1>
                     <div class="separator-2"></div>
                     <!-- page-title end -->
@@ -124,7 +129,7 @@
                                     </a>
                                 @endif
                             @endif
-
+{{--
                             @if($user['website'])
                                 <h3 class="mt-4">En savoir plus</h3>
                                 <div class="separator-2"></div>
@@ -133,6 +138,7 @@
                                     <i class="fa fa-plus"></i>
                                 </a>
                             @endif
+--}}
                         </div>
                     </div>
 

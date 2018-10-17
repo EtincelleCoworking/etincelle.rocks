@@ -15,6 +15,9 @@ class PortalController extends Controller
 
     public function city($city_slug)
     {
+        if (!in_array($city_slug, array('albi', 'toulouse'))) {
+            abort(404);
+        }
         return view('portal.city', [
             'city' => ucfirst($city_slug),
             'users' => $this->getUsers(['city' => $city_slug]),
@@ -24,10 +27,14 @@ class PortalController extends Controller
     public function job($job_slug)
     {
         $jobs = Layout::getJobs();
-        foreach($jobs as $job){
-            if($job['slug'] == $job_slug){
+        $active_job = null;
+        foreach ($jobs as $job) {
+            if ($job['slug'] == $job_slug) {
                 $active_job = $job['name'];
             }
+        }
+        if (null == $active_job) {
+            abort(404);
         }
         return view('portal.job', [
             'job' => $active_job,
