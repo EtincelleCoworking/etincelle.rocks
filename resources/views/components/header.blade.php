@@ -103,6 +103,7 @@
                 <div class="col-auto hidden-md-down">
                     <!-- header dropdown buttons -->
                     <div class="header-dropdown-buttons">
+                        {{--
                         <div class="btn-group">
                             <button type="button" class="btn dropdown-toggle dropdown-toggle--no-caret"
                                     id="header-drop-1" data-toggle="dropdown" aria-haspopup="true"
@@ -119,6 +120,7 @@
                                 </li>
                             </ul>
                         </div>
+                        --}}
                         {{--
                         <div class="btn-group">
                             <button type="button" class="btn dropdown-toggle dropdown-toggle--no-caret" id="header-drop-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-basket"></i><span class="cart-count default-bg">8</span></button>
