@@ -55,9 +55,10 @@
                                     <div class="overlay-bottom">
                                         <div class="text">
                                             <h3 class="title margin-clear">{{$user['bio_short']}}</h3>
-                                            <p class="margin-clear"><i
-                                                        class="fa fa-phone-square"></i> {{$user['phone']}}</p>
-
+                                            @if($user['phone'])
+                                                <p class="margin-clear"><i
+                                                            class="fa fa-phone-square"></i> {{$user['phone']}}</p>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
