@@ -92,6 +92,8 @@
 <!-- JavaScript files placed at the end of the document so the pages load faster -->
 <!-- ================================================== -->
 <!-- Jquery and Bootstap core js files -->
+
+@include('components.google-analytics')
 <script src="{{asset('plugins/jquery.min.js')}}"></script>
 <script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- Magnific Popup javascript -->
