@@ -12,8 +12,16 @@ const mix = require('laravel-mix');
  */
 
 mix
-    //.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/style.scss', 'public/css')
-   .sass('resources/sass/skins/light_blue.scss', 'public/css')
-   .sass('resources/sass/typography-scheme-3.scss', 'public/css/typography.css')
+    .js(['public/plugins/jquery.min.js',
+    'public/bootstrap/js/bootstrap.bundle.min.js',
+    'public/plugins/magnific-popup/jquery.magnific-popup.min.js',
+    'public/plugins/waypoints/jquery.waypoints.min.js',
+    'public/plugins/waypoints/sticky.min.js',
+    //'public/plugins/countTo/jquery.countTo.js',
+    'public/plugins/slick/slick.min.js',
+    'public/js/template.js'
+    ], 'public/js/app.js')
+   .sass('resources/sass/etincelle.scss', 'public/css/etincelle.css')
 ;
+
+
