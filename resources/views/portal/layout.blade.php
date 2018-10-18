@@ -11,23 +11,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="{{asset('favicon.ico')}}">
+    <link rel="apple-touch-icon" sizes="57x57" src="{{asset('apple-icon-57x57.png')}}" />
+    <link rel="apple-touch-icon" sizes="60x60" src="{{asset('apple-icon-60x60.png')}}" />
+    <link rel="apple-touch-icon" sizes="72x72" src="{{asset('apple-icon-72x72.png')}}" />
+    <link rel="apple-touch-icon" sizes="76x76" src="{{asset('apple-icon-76x76.png')}}" />
+    <link rel="apple-touch-icon" sizes="114x114" src="{{asset('apple-icon-114x114.png')}}" />
+    <link rel="apple-touch-icon" sizes="120x120" src="{{asset('apple-icon-120x120.png')}}" />
+    <link rel="apple-touch-icon" sizes="144x144" src="{{asset('apple-icon-144x144.png')}}" />
+    <link rel="apple-touch-icon" sizes="152x152" src="{{asset('apple-icon-152x152.png')}}" />
+    <link rel="apple-touch-icon" sizes="180x180" src="{{asset('apple-icon-180x180.png')}}" />
+    <link rel="icon" type="image/png" sizes="192x192"  src="{{asset('android-icon-192x192.png')}}" />
+    <link rel="icon" type="image/png" sizes="32x32" src="{{asset('favicon-32x32.png')}}" />
+    <link rel="icon" type="image/png" sizes="96x96" src="{{asset('favicon-96x96.png')}}" />
+    <link rel="icon" type="image/png" sizes="16x16" src="{{asset('favicon-16x16.png')}}" />
+    <link rel="manifest" href="{{asset('manifest.json')}}">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{asset('ms-icon-144x144.png')}}">
     <meta name="theme-color" content="#ffffff">
 
     <!-- Web Fonts -->
@@ -44,7 +44,9 @@
 
     <!-- Plugins -->
     <link href="{{asset('plugins/magnific-popup/magnific-popup.css')}}" rel="stylesheet">
+    {{--
     <link href="{{asset('css/animations.css')}}" rel="stylesheet">
+    --}}
     <link href="{{asset('plugins/slick/slick.css')}}" rel="stylesheet">
 
     <!-- The Project's core CSS file -->
@@ -54,12 +56,14 @@
     <!-- Used font for body: Roboto -->
     <!-- Used font for headings: Raleway -->
     <!-- Use css/rtl_typography-default.css for RTL version -->
-    <link href="{{asset('css/typography-default.css')}}" rel="stylesheet">
+    <link href="{{asset('css/typography.css')}}" rel="stylesheet">
     <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer) -->
-    <link href="{{asset('css/skins/light_blue.css')}}" rel="stylesheet">
+    <link href="{{asset('css/light_blue.css')}}" rel="stylesheet">
 
     <!-- Custom css -->
+    {{--
     <link href="{{asset('css/custom.css')}}" rel="stylesheet">
+    --}}
 
 </head>
 
