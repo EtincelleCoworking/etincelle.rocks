@@ -35,10 +35,12 @@
                             <i class="fa fa-envelope-o"></i>
                         </a>
                         --}}
-                        <a class="btn btn-gray btn-animated pull-right" href="{{$user['website']}}">
-                            Visitez mon site
-                            <i class="fa fa-globe"></i>
-                        </a>
+                        @if($user['website'])
+                            <a class="btn btn-gray btn-animated pull-right" href="{{$user['website']}}">
+                                Visitez mon site
+                                <i class="fa fa-globe"></i>
+                            </a>
+                        @endif
                     </h1>
                     <div class="separator-2"></div>
                     <!-- page-title end -->
@@ -129,16 +131,16 @@
                                     </a>
                                 @endif
                             @endif
-{{--
-                            @if($user['website'])
-                                <h3 class="mt-4">En savoir plus</h3>
-                                <div class="separator-2"></div>
-                                <a class="btn btn-gray collapsed btn-animated" href="{{$user['website']}}">
-                                    Visitez mon site
-                                    <i class="fa fa-plus"></i>
-                                </a>
-                            @endif
---}}
+                            {{--
+                                                        @if($user['website'])
+                                                            <h3 class="mt-4">En savoir plus</h3>
+                                                            <div class="separator-2"></div>
+                                                            <a class="btn btn-gray collapsed btn-animated" href="{{$user['website']}}">
+                                                                Visitez mon site
+                                                                <i class="fa fa-plus"></i>
+                                                            </a>
+                                                        @endif
+                            --}}
                         </div>
                     </div>
 
