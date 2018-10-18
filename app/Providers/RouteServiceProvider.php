@@ -27,7 +27,7 @@ class RouteServiceProvider extends ServiceProvider
         Route::pattern('id', '[0-9]+');
         Route::pattern('city_slug', 'albi|toulouse');
         Route::pattern('job_slug', '^[a-z-]+$');
-        Route::pattern('user_slug', '^[a-z]+\.[a-z]+$');
+        Route::pattern('user_slug', '^[a-z0-9-]+\.[a-z0-9-]+$');
         parent::boot();
     }
 
