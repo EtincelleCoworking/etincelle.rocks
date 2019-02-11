@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-md-5">
-                            {{$user['bio_long']}}
+                            {!!nl2br(e($user['bio_long'])) !!}
                             {{--
 
                             <div class="progress style-2 dark">
